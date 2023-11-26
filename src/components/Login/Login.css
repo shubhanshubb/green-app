@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+    /* height: 100vh; */
+}
+
+.logo,
+.logo-small {
+    /* display: flex; */
+    justify-content: center;
+    align-self: center;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.logo-small {
+    padding-top: 20px;
+    width: 80px;
+    height: 80px;
+    display: none;
+}
+
+.electric {
+    text-align: center;
+    font: normal normal normal 16px/21px Mulish;
+    letter-spacing: 0.02px;
+    color: #36A546CC;
+    opacity: 1;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField {
+    width: 238px;
+    /* height: 32px; */
+    margin-top: 20px;
+    background: #1F191966;
+    box-shadow: inset 0px 3px 3px #FFFDFD40, 3px 3px 3px #4A494947;
+    mix-blend-mode: normal;
+    opacity: 1;
+    border: none;
+    padding-left: 40px;
+    border: 2;
+    border-radius: 30px;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+
+.login {
+    width: 248px;
+    height: 42px;
+    margin-top: 20px;
+    align-self: center;
+    background: transparent linear-gradient(180deg, #00FF2580 0%, #000000 100%, #36A54680 100%) 0% 0% no-repeat padding-box;
+    mix-blend-mode: normal;
+    border: 2px solid #8CFF0026;
+    border-radius: 30px;
+    opacity: 1;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.error {
+    color: red;
+    align-self: center;
+
+}
+
+.forgot {
+    margin-top: 15px;
+    text-align: center;
+    font: normal normal normal 15px/20px Mulish;
+    letter-spacing: 0.02px;
+    color: #36A546;
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+    .logo-small {
+        display: flex;
+    }
+}
+
+
+@media only screen and (max-width: 412px) {
+
+    .inputField,
+    .login {
+        width: 100%;
+        margin: 10px 0;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+
+    .inputField,
+    .login {
+        width: 100%;
+        margin: 10px 0;
+        align-self: center;
+    }
+}
