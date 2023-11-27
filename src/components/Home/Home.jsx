@@ -18,11 +18,13 @@ function Home() {
 
   return (
     <div className="container">
+      <div className='logoConatiner'>
       <div className="logo">
         <img src={customCare} alt="Logo" />
       </div>
       <div className="logo-small">
         <img src={customC} alt="Small Logo" />
+      </div>
       </div>
 
       <div className="companyLogo">

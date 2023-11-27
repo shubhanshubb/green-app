@@ -1,22 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import "./Login.css";
-import logo from '../assets/Loginlarge.png'
-import smallLogo from '../assets/loginsmall.png'
-import {useNavigate } from 'react-router-dom';
+import logo from "../assets/Loginlarge.png";
+import smallLogo from "../assets/loginsmall.png";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
-
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("navigate")
+    console.log("navigate");
     if (username === "admin@email.com" && password === "password@123") {
       setError("");
-      navigate("/homeportal")
+      navigate("/homeportal");
     } else {
       setError("Invalid email or password.");
     }
@@ -28,11 +27,13 @@ function Login() {
 
   return (
     <div className="container">
-      <div className='logo'>
-        <img src={logo} alt="Logo" />
-      </div>
-      <div className='logo-small'>
-        <img src={smallLogo} alt="Small Logo" />
+      <div className="logoContainer">
+        <div className="logo">
+          <img src={logo} alt="Logo" />
+        </div>
+        <div className="logo-small">
+          <img src={smallLogo} alt="Small Logo" />
+        </div>
       </div>
       <div className="electric">#We are Electric</div>
       <div className="loginBox">
@@ -60,10 +61,8 @@ function Login() {
           Forgot Password
         </div>
       </div>
-
-
     </div>
-  )
+  );
 }
 
-export default Login
+export default Login;

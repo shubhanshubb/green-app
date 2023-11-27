@@ -8,6 +8,10 @@
     /* height: 100vh; */
 }
 
+.logoConatiner {
+    padding-top : 20px;
+}
+
 .logo,
 .logo-small {
     display: flex;
